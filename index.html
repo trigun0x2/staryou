@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fk You</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="custom.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+</head>
+<body>
+	
+	<div class="butfk"><input type="button" value="Would you like some pudding?" id="fkyou"></div>
+	<h1><div class="textvalue"></div></h1>
+	<script type="text/javascript">
+		$(document).ready(function(){
+				$('#fkyou').click(function(){
+					$('.butfk').fadeOut(function(){
+						$('.textvalue').html('Fuck You');	
+					});
+			});
+		});		
+	</script>
+</body>
+</html>
